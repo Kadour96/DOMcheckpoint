@@ -1,0 +1,162 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styledom.css">
+    <link rel="icon" href="images/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/826d6d87d8.js" crossorigin="anonymous"></script>
+    <title>E-commerce</title>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Store</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Panier</a>
+              </li>  
+            </ul>
+            <button type="button" class="btn btn-primary position-relative" >
+              Panier
+              <span  id="notif" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"  >
+                0 
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </nav>   
+<main >
+    <section class="main">
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/iphone12.png" class="card-img-top" alt="iphone12">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 12</h5>
+              <p class="card-text">L'iPhone 12 est le modèle principal de la 14e génération de smartphone d'Apple annoncé le 13 octobre 2020. Il est équipé d'un écran de 6,1 pouces OLED HDR 60 Hz, d'un double capteur photo avec ultra grand-angle et d'un SoC Apple A14 Bionic compatible 5G (sub-6 GHz).</p>
+             <div class="text-center">
+                <button type="button" class="btn btn-secondary btn-sm" >Ajouter au panier</button>
+                <i class="fa-solid fa-heart"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/iphone12pro.jpg" class="card-img-top" alt="iphone12pro">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 12 Pro</h5>
+              <p class="card-text">L'iPhone 12 Pro est le modèle haut de gamme de la 14e génération de smartphone d'Apple annoncé le 13 octobre 2020. Il est équipé d'un écran de 6,1 pouces OLED HDR 60 Hz, d'un triple capteur photo avec ultra grand-angle et téléobjectif (x4 optique) et d'un SoC Apple A14 Bionic compatible 5G (sub-6 GHz).
+              </p>
+              <div class="text-center">
+                <button type="button" class="btn btn-secondary btn-sm">Ajouter au panier</button>
+                <i class="fa-solid fa-heart"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/iphone13.jfif" class="card-img-top" alt="iphone13" >
+            <div class="card-body">
+              <h5 class="card-title">Iphone 13</h5>
+              <p class="card-text">L'iPhone 13 , annoncé le 14 septembre 2021, est le modèle compact de la 15e itération du smartphone d'Apple. Il est équipé d'un écran OLED de 5,4 pouces 60 Hz, d'un SoC Apple A15 Bionic compatible 5G (NR & Sub-6) et d'un double capteur photo de 12+12 mégapixels (grand-angle et ultra grand-angle) avec OIS.</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-secondary btn-sm">Ajouter au panier</button>
+                <i class="fa-solid fa-heart"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/iphone13pro.jpg" class="card-img-top" alt="iphone13pro">
+            <div class="card-body">
+              <h5 class="card-title">Iphone 13 Pro</h5>
+              <p class="card-text">L'iPhone 13 Pro, annoncé le 14 septembre 2021, est le modèle haut de gamme de la 15e itération du smartphone d'Apple. Il est équipé d'un écran OLED de 6,1 pouces 120 Hz, d'un SoC Apple A15 Bionic compatible 5G (NR & Sub-6) et d'un triple capteur photo de 12+12+12 mégapixels (grand-angle, téléobjectif et ultra grand-angle) avec OIS.</p>
+              <div class="text-center">
+                <button type="button" class="btn btn-secondary btn-sm">Ajouter au panier</button>
+                <i class="fa-solid fa-heart"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <table id="tab" class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="trash">
+            <th scope="row">1</th>
+            <td>Iphone 12</td>
+            <td ><button type="button" class="btn btn-info" >+</button>
+              <span class="count">0</span> <button type="button" class="btn btn-warning" >-</button>
+            </td>
+            <td ><span class="unitprice"> 999</span>$</td>
+            <td ><i class="fa-solid fa-trash-can" value="Delete" onclick="deleteRow(this)"> </i> </td>
+          </tr>
+          <tr class="trash">
+            <th scope="row">2</th>
+            <td>Iphone 12 Pro</td>
+            <td ><button type="button" class="btn btn-info" >+</button>
+              <span class="count">0</span> <button type="button" class="btn btn-warning" >-</button>
+            </td>
+            <td ><span class="unitprice"> 1299</span>$</td>
+            <td ><i class="fa-solid fa-trash-can" value="Delete" onclick="deleteRow(this)"> </i> </td>
+          </tr>
+          <tr class="trash">
+            <th scope="row">3</th>
+            <td>Iphone 13</td>
+            <td ><button type="button" class="btn btn-info" >+</button>
+              <span class="count">0</span> <button type="button" class="btn btn-warning" >-</button>
+            </td>
+            <td ><span class="unitprice"> 1599</span>$</td>
+            <td ><i class="fa-solid fa-trash-can" value="Delete" onclick="deleteRow(this)"> </i> </td>
+          </tr>
+          <tr class="trash">
+            <th scope="row">4</th>
+            <td>Iphone 13 Pro</td>
+            <td ><button type="button" class="btn btn-info" >+</button>
+              <span class="count">0</span> <button type="button" class="btn btn-warning" >-</button>
+            </td>
+            <td ><span class="unitprice"> 1999</span>$</td>
+            <td ><i class="fa-solid fa-trash-can" value="Delete" onclick="deleteRow(this)"> </i> </td>
+          </tr>
+          <tr class="trash">
+            <th scope="row">-</th>
+            <td></td>
+            <td > </td>
+            <td></td>
+            <td><span id="total">0</span>$</td>
+          </tr>
+        </tbody>
+      </table>
+</main>
+
+</body>
+<script type="text/javascript" src="dom.js"></script>
+
+</html>
