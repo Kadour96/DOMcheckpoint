@@ -6,6 +6,7 @@ var price=document.getElementsByClassName('unitprice');
 var quantity=document.getElementsByClassName('count');
 var notific=document.getElementById('notif');
 var heart=document.querySelectorAll('.fa-heart');
+console.log(heart);
 
 
 for(let i=0;i<plusbtn.length;i++){
@@ -53,7 +54,7 @@ function notification() {
   }
   notific.innerText=tot;
 }  
-function heartr(){
+
   for (let i=0;i<heart.length;i++){
   
   heart[i].addEventListener("click",function(){
@@ -64,4 +65,3 @@ function heartr(){
     heart[i].style.color="black";
   }
   })}
-}
